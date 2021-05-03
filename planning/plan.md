@@ -44,7 +44,7 @@ display which user won, if any, otherwise display that no one won
 
 #### CSS
 
-font import: @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 font-family: 'Rubik', sans-serif;
 
 ---
