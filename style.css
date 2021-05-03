@@ -22,4 +22,6 @@ body {
 	height: 100px;
 	width: 100px;
 	border: 5px solid black;
+	font-size: 80px;
+	text-align: center;
 }
