@@ -4,19 +4,11 @@
 // turns, inside event listener function or outside of it?
 
 const xoBoxes = document.querySelectorAll(".board div");
+const boxesArray = Array.from(xoBoxes);
 const xPlayer = "X";
 const oPlayer = "O";
-let currentPlayer = oPlayer;
-// const winningCombinations = [
-// 	[0, 1, 2],
-// 	[3, 4, 5],
-// 	[6, 7, 8],
-// 	[0, 3, 6],
-// 	[1, 4, 7],
-// 	[2, 5, 8],
-// 	[0, 4, 8],
-// 	[2, 4, 6],
-// ];
+let currentPlayer = xPlayer;
+let clickCounter = 0;
 
 for (let i = 0; i < xoBoxes.length; i++) {
 	let currentBox = xoBoxes[i];
@@ -26,5 +18,62 @@ for (let i = 0; i < xoBoxes.length; i++) {
 	function clickEvent() {
 		currentPlayer = currentPlayer === oPlayer ? xPlayer : oPlayer;
 		currentBox.textContent = currentPlayer;
+		winningCombinations();
+		clickCounter++;
+		if (clickCounter == 9) {
+			console.log("It's a draw!");
+		}
+	}
+
+	function winningCombinations() {
+		if (
+			boxesArray[0].textContent === currentPlayer &&
+			boxesArray[1].textContent === currentPlayer &&
+			boxesArray[2].textContent === currentPlayer
+		) {
+			console.log(`${currentPlayer} wins!`);
+		} else if (
+			boxesArray[3].textContent === currentPlayer &&
+			boxesArray[4].textContent === currentPlayer &&
+			boxesArray[5].textContent === currentPlayer
+		) {
+			console.log(`${currentPlayer} wins!`);
+		} else if (
+			boxesArray[6].textContent === currentPlayer &&
+			boxesArray[7].textContent === currentPlayer &&
+			boxesArray[8].textContent === currentPlayer
+		) {
+			console.log(`${currentPlayer} wins!`);
+		} else if (
+			boxesArray[0].textContent === currentPlayer &&
+			boxesArray[3].textContent === currentPlayer &&
+			boxesArray[6].textContent === currentPlayer
+		) {
+			console.log(`${currentPlayer} wins!`);
+		} else if (
+			boxesArray[1].textContent === currentPlayer &&
+			boxesArray[4].textContent === currentPlayer &&
+			boxesArray[7].textContent === currentPlayer
+		) {
+			console.log(`${currentPlayer} wins!`);
+		} else if (
+			boxesArray[2].textContent === currentPlayer &&
+			boxesArray[5].textContent === currentPlayer &&
+			boxesArray[8].textContent === currentPlayer
+		) {
+			console.log(`${currentPlayer} wins!`);
+		} else if (
+			boxesArray[0].textContent === currentPlayer &&
+			boxesArray[4].textContent === currentPlayer &&
+			boxesArray[8].textContent === currentPlayer
+		) {
+			console.log(`${currentPlayer} wins!`);
+		} else if (
+			boxesArray[2].textContent === currentPlayer &&
+			boxesArray[4].textContent === currentPlayer &&
+			boxesArray[6].textContent === currentPlayer
+		) {
+			console.log(`${currentPlayer} wins!`);
+		}
 	}
 }
