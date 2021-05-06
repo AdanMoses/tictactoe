@@ -16,7 +16,8 @@ let clickCounter = 0;
 
 for (let i = 0; i < xoBoxes.length; i++) {
 	let currentBox = xoBoxes[i];
-
+	const restartBtn = document.querySelector("#restart-btn");
+	restartBtn.addEventListener("click", restartGame);
 	currentBox.addEventListener("click", clickEvent, { once: true });
 
 	function clickEvent() {
@@ -26,6 +27,13 @@ for (let i = 0; i < xoBoxes.length; i++) {
 		clickCounter++;
 		if (clickCounter == 9) {
 			alert("It's a draw!");
+		}
+	}
+
+	function restartGame() {
+		currentBox.addEventListener("click", clickEvent, { once: true });
+		for (let i = 0; i < boxesArray.length; i++) {
+			boxesArray[i].textContent = " ";
 		}
 	}
 }
@@ -81,3 +89,6 @@ function winningCombinations() {
 		alert(`${currentPlayer} Player Wins!`);
 	}
 }
+// function gameStart () {
+
+// }
