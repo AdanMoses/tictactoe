@@ -28,56 +28,56 @@ for (let i = 0; i < xoBoxes.length; i++) {
 			alert("It's a draw!");
 		}
 	}
+}
 
-	function winningCombinations() {
-		if (
-			boxesArray[0].textContent === currentPlayer &&
-			boxesArray[1].textContent === currentPlayer &&
-			boxesArray[2].textContent === currentPlayer
-		) {
-			alert(`${currentPlayer} Player Wins!`);
-		} else if (
-			boxesArray[3].textContent === currentPlayer &&
-			boxesArray[4].textContent === currentPlayer &&
-			boxesArray[5].textContent === currentPlayer
-		) {
-			alert(`${currentPlayer} Player Wins!`);
-		} else if (
-			boxesArray[6].textContent === currentPlayer &&
-			boxesArray[7].textContent === currentPlayer &&
-			boxesArray[8].textContent === currentPlayer
-		) {
-			alert(`${currentPlayer} Player Wins!`);
-		} else if (
-			boxesArray[0].textContent === currentPlayer &&
-			boxesArray[3].textContent === currentPlayer &&
-			boxesArray[6].textContent === currentPlayer
-		) {
-			alert(`${currentPlayer} Player Wins!`);
-		} else if (
-			boxesArray[1].textContent === currentPlayer &&
-			boxesArray[4].textContent === currentPlayer &&
-			boxesArray[7].textContent === currentPlayer
-		) {
-			alert(`${currentPlayer} Player Wins!`);
-		} else if (
-			boxesArray[2].textContent === currentPlayer &&
-			boxesArray[5].textContent === currentPlayer &&
-			boxesArray[8].textContent === currentPlayer
-		) {
-			alert(`${currentPlayer} Player Wins!`);
-		} else if (
-			boxesArray[0].textContent === currentPlayer &&
-			boxesArray[4].textContent === currentPlayer &&
-			boxesArray[8].textContent === currentPlayer
-		) {
-			alert(`${currentPlayer} Player Wins!`);
-		} else if (
-			boxesArray[2].textContent === currentPlayer &&
-			boxesArray[4].textContent === currentPlayer &&
-			boxesArray[6].textContent === currentPlayer
-		) {
-			alert(`${currentPlayer} Player Wins!`);
-		}
+function winningCombinations() {
+	if (
+		boxesArray[0].textContent === currentPlayer &&
+		boxesArray[1].textContent === currentPlayer &&
+		boxesArray[2].textContent === currentPlayer
+	) {
+		alert(`${currentPlayer} Player Wins!`);
+	} else if (
+		boxesArray[3].textContent === currentPlayer &&
+		boxesArray[4].textContent === currentPlayer &&
+		boxesArray[5].textContent === currentPlayer
+	) {
+		alert(`${currentPlayer} Player Wins!`);
+	} else if (
+		boxesArray[6].textContent === currentPlayer &&
+		boxesArray[7].textContent === currentPlayer &&
+		boxesArray[8].textContent === currentPlayer
+	) {
+		alert(`${currentPlayer} Player Wins!`);
+	} else if (
+		boxesArray[0].textContent === currentPlayer &&
+		boxesArray[3].textContent === currentPlayer &&
+		boxesArray[6].textContent === currentPlayer
+	) {
+		alert(`${currentPlayer} Player Wins!`);
+	} else if (
+		boxesArray[1].textContent === currentPlayer &&
+		boxesArray[4].textContent === currentPlayer &&
+		boxesArray[7].textContent === currentPlayer
+	) {
+		alert(`${currentPlayer} Player Wins!`);
+	} else if (
+		boxesArray[2].textContent === currentPlayer &&
+		boxesArray[5].textContent === currentPlayer &&
+		boxesArray[8].textContent === currentPlayer
+	) {
+		alert(`${currentPlayer} Player Wins!`);
+	} else if (
+		boxesArray[0].textContent === currentPlayer &&
+		boxesArray[4].textContent === currentPlayer &&
+		boxesArray[8].textContent === currentPlayer
+	) {
+		alert(`${currentPlayer} Player Wins!`);
+	} else if (
+		boxesArray[2].textContent === currentPlayer &&
+		boxesArray[4].textContent === currentPlayer &&
+		boxesArray[6].textContent === currentPlayer
+	) {
+		alert(`${currentPlayer} Player Wins!`);
 	}
 }
