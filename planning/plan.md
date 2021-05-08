@@ -32,16 +32,16 @@ These are for extra credit! DON'T focus on these until you've hit the core requi
 
 ---
 
-there will be a css grid to give the 3 x 3 squares
-the "x" and "o" will be innerText in a div of the grid
-will need to find appropriate font --done
-there's two players - each player will have one move each turn
-use conditional operator ( x ? o : x ) to determine turn
-check {once:true} for only being able to click once -- this is awesome
-there's 8 possible ways of winning - 3 columns, 3 rows, and 2 verticals
-create a way to check all possible ways of winning
-display which user won, if any, otherwise display that no one won
-maybe a play again button?
+- there will be a css grid to give the 3 x 3 squares
+- the "x" and "o" will be innerText in a div of the grid
+- will need to find appropriate font --done
+- there's two players - each player will have one move each turn
+- use conditional operator ( x ? o : x ) to determine turn
+- check {once:true} for only being able to click once -- this is awesome
+- there's 8 possible ways of winning - 3 columns, 3 rows, and 2 verticals
+- create a way to check all possible ways of winning
+- display which user won, if any, otherwise display that no one won
+- maybe a play again button?
 
 ---
 
