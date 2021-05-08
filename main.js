@@ -16,7 +16,12 @@ let currentPlayer = oPlayer;
 let clickCounter = 0;
 
 const playerTurn = document.querySelector("#player-turn");
-playerTurn.textContent = `${currentPlayer} Player Turn`;
+
+if (currentPlayer == oPlayer) {
+	playerTurn.textContent = `X Player's Turn`;
+} else if (currentPlayer == xPlayer) {
+	playerTurn.textContent = `O Player's Turn`;
+}
 
 for (let i = 0; i < boxesArray.length; i++) {
 	let currentBox = boxesArray[i];
@@ -29,7 +34,13 @@ for (let i = 0; i < boxesArray.length; i++) {
 		if (gameActive) {
 			currentPlayer = currentPlayer === oPlayer ? xPlayer : oPlayer;
 			currentBox.textContent = currentPlayer;
-			playerTurn.textContent = `${currentPlayer} Player Turn`;
+
+			if (currentPlayer == oPlayer) {
+				playerTurn.textContent = `X Player's Turn`;
+			} else if (currentPlayer == xPlayer) {
+				playerTurn.textContent = `O Player's Turn`;
+			}
+
 			winningCombinations();
 			clickCounter++;
 			if (gameActive == true && clickCounter == 9) {
