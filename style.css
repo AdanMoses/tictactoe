@@ -31,7 +31,7 @@ button {
 	background: rgba(109, 41, 109, 0.308);
 	border-color: rebeccapurple;
 	color: rebeccapurple;
-	transition: 1s;
+	transition: 0.5s;
 }
 
 button:hover {
