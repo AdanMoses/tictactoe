@@ -15,6 +15,8 @@ body {
 .banner h1 {
 	text-align: center;
 	color: rebeccapurple;
+	font-size: 50px;
+	border-bottom: 2px solid rebeccapurple;
 }
 
 .main {
@@ -37,6 +39,12 @@ button:hover {
 	color: white;
 }
 
+#player-turn {
+	color: rebeccapurple;
+	font-size: 30px;
+	padding-top: 30px;
+}
+
 .board {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -44,6 +52,7 @@ button:hover {
 	width: 300px;
 	height: 300px;
 	padding-top: 50px;
+	gap: none;
 }
 
 .box {
@@ -78,4 +87,32 @@ button:hover {
 #box3,
 #box6 {
 	border-left: none;
+}
+
+.footer {
+	border-top: 1px solid rebeccapurple;
+	margin-top: 50px;
+	display: flex;
+	text-align: center;
+}
+
+.footer ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	padding-left: 0;
+}
+
+.footer ul > li {
+	padding: 5px;
+}
+
+.footer ul > li > a {
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.footer ul > li > a:hover {
+	text-decoration: underline;
+	font-size: 15px;
 }
