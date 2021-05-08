@@ -1,16 +1,17 @@
 # tictactoe
+---
 ## Simple tic tac toe game
 
 No installation necessary, just [run from the browser](https://adanmoses.github.io/tictactoe/).
 
 ### Built With
----
+
 - HTML
 - CSS
 - Plain (or Vanilla) JavaScript
 
 ### Instructions
----
+
 Just the usual tic tac toe game, if you've never played here's the rules:
 
 1. This is a two player game, solo mode to be added in the future.
@@ -21,7 +22,7 @@ Just the usual tic tac toe game, if you've never played here's the rules:
 6. If you would like to replay, or have made a mistake, you can use the _Reset_ button to start the round over again.
 
 ### Additions and TODO
----
+
 Ideally: 
 
 - I would like to be able to scale the game (choose a 4x4+ grid)
