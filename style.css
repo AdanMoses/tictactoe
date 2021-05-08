@@ -89,6 +89,11 @@ button:hover {
 	border-left: none;
 }
 
+.scoreboard {
+	color: rebeccapurple;
+	margin-top: 20px;
+}
+
 .footer {
 	border-top: 1px solid rebeccapurple;
 	margin-top: 50px;
